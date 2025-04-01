@@ -1,0 +1,53 @@
+/* Custom styles that Bootstrap doesn't handle */
+
+/* Hero section background image */
+#hero {
+  background-image: url('bgimg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+/* Painting card hover effect */
+.painting-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Custom rating button hover effect */
+.rating button:hover {
+  background-color: #e6b800;
+}
+
+/* Custom description box */
+.description-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Custom responsive styles if needed */
+}
+
+/* Custom CSS for thicker header and text */
+header h1 {
+  font-weight: 700; /* Makes the text extra bold */
+}
+
+
+/* Ensure footer spans full width */
+footer {
+  width: 100%;
+  margin-top: auto; /* Pushes footer to the bottom if content is short */
+}
+
+.btn:active {
+  background-color: #42ad79 !important; /* Slightly darker green */
+  border-color: #8fd3b2 !important; /* Optional: Match border color */
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Museum</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-dark text-white py-3 sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="navbar-brand mb-0 fw-bold">Art Museum</h1> <!-- Added fw-bold -->
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+    <!-- Hero Section -->
+    <section id="hero" class="bg-image d-flex flex-column justify-content-center align-items-center text-center text-white py-5 mb-5">
+      <h2 class="display-4">Explore the World of Art</h2>
+      <p class="lead">Discover famous paintings from different eras and styles.</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="mb-5">
+      <h2 class="text-center mb-4">Categories</h2>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <button class="btn bg-success bg-opacity-25 text-dark" onclick="showPaintings('renaissance')">Renaissance</button>
+        <button class="btn bg-success bg-opacity-25 text-dark" onclick="showPaintings('impressionism')">Impressionism</button>
+        <button class="btn bg-success bg-opacity-25 text-dark" onclick="showPaintings('modernart')">Modern Art</button>
+      </div>
+    </section>
+
+    <!-- Paintings Section will be dynamically inserted here -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-2 container-fluid">
+    <p class="mb-0">&copy; 2025 Art Museum</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <!-- Paintings Data -->
+  <script src="paintingsData.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
